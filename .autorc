@@ -4,7 +4,10 @@
     "all-contributors",
     "conventional-commits",
     "first-time-contributor",
-    "released"
+    [
+    "released",{
+            "message": ":rocket: ${TYPE} was released in ${VERSION} :rocket: \n Just run `go get github.com/angeliski/go-auto-release@${VERSION}`"
+      }]
   ],
   "owner": "angeliski",
   "repo": "go-auto-release",
