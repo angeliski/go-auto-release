@@ -40,7 +40,6 @@ jobs:
           @auto-it/git-tag
           @auto-it/conventional-commits
           @auto-it/released
-          @auto-it/slack
       - run: |
           npx auto shipit
 

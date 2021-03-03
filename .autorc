@@ -4,8 +4,7 @@
     "all-contributors",
     "conventional-commits",
     "first-time-contributor",
-    "released",
-    "slack"
+    "released"
   ],
   "owner": "angeliski",
   "repo": "go-auto-release",
