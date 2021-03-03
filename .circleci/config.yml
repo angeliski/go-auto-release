@@ -23,3 +23,32 @@ jobs:
       # specify any bash command here prefixed with `run: `
       - run: go get -v -t -d ./...
       - run: go test -v ./...
+  publish:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout # we need checkout as shipt it uses git information
+      - run:
+          name: 'Set github username and email'
+          command: |
+            git config --global user.email "angeliski@hotmail.com" && \
+            git config --global user.name "angeliski"
+      - run: >
+          yarn add auto @auto-it/all-contributors
+          @auto-it/first-time-contributor
+          @auto-it/core
+          @auto-it/git-tag
+          @auto-it/conventional-commits
+          @auto-it/released
+          @auto-it/slack
+      - run: |
+          npx auto shipit
+
+workflows:
+  version: 2
+  CI:
+    jobs:
+      - build
+      - publish:
+          requires:
+            - build

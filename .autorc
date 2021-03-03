@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "conventional-commits",
+    "first-time-contributor",
+    "released",
+    "slack"
+  ],
+  "owner": "angeliski",
+  "repo": "go-auto-release",
+  "name": "angeliski",
+  "email": "angeliski@hotmail.com",
+  "onlyPublishWithReleaseLabel": true
+}
