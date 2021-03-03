@@ -1,3 +1,19 @@
+# v1.0.0 (Wed Mar 03 2021)
+
+#### 💥 Breaking Change
+
+- feat: Major update [#9](https://github.com/angeliski/go-auto-release/pull/9) ([@angeliski](https://github.com/angeliski))
+
+#### ⚠️ Pushed to `master`
+
+- chore: add custom message release ([@angeliski](https://github.com/angeliski))
+
+#### Authors: 1
+
+- Rogerio Angeliski ([@angeliski](https://github.com/angeliski))
+
+---
+
 # v0.1.0 (Wed Mar 03 2021)
 
 #### 🚀 Enhancement
