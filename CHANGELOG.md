@@ -1,3 +1,28 @@
+# v1.2.1 (Thu Mar 04 2021)
+
+### Release Notes
+
+#### fix: update new feature again ([#17](https://github.com/angeliski/go-auto-release/pull/17))
+
+Amazing information to release notes :rocket: :shipit: :shamrock:
+
+#### fix: update new feature ([#16](https://github.com/angeliski/go-auto-release/pull/16))
+
+Something amazing! :rocket: :guide_dog:
+
+---
+
+#### 🐛 Bug Fix
+
+- fix: update new feature again [#17](https://github.com/angeliski/go-auto-release/pull/17) ([@angeliski](https://github.com/angeliski))
+- fix: update new feature [#16](https://github.com/angeliski/go-auto-release/pull/16) ([@angeliski](https://github.com/angeliski))
+
+#### Authors: 1
+
+- Rogerio Angeliski ([@angeliski](https://github.com/angeliski))
+
+---
+
 # v1.2.0 (Thu Mar 04 2021)
 
 #### 🚀 Enhancement
