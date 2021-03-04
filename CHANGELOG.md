@@ -1,3 +1,23 @@
+# v1.2.0 (Thu Mar 04 2021)
+
+#### 🚀 Enhancement
+
+- feat: add a new feature [#15](https://github.com/angeliski/go-auto-release/pull/15) ([@angeliski](https://github.com/angeliski))
+
+#### 🐛 Bug Fix
+
+- fix: update major feature [#13](https://github.com/angeliski/go-auto-release/pull/13) ([@angeliski](https://github.com/angeliski))
+
+#### ⚠️ Pushed to `master`
+
+- chore: update changelog to make another test ([@angeliski](https://github.com/angeliski))
+
+#### Authors: 1
+
+- Rogerio Angeliski ([@angeliski](https://github.com/angeliski))
+
+---
+
 # Changelog
 All notable changes to this project will be documented in this file.
 
