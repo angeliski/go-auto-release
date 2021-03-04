@@ -1,3 +1,19 @@
+# v1.1.1 (Thu Mar 04 2021)
+
+#### 🐛 Bug Fix
+
+- fix: update major feature [#12](https://github.com/angeliski/go-auto-release/pull/12) ([@angeliski](https://github.com/angeliski))
+
+#### 🧪 Tests
+
+- chore(ci): updated circle ci configuration to only allow conventional… [#11](https://github.com/angeliski/go-auto-release/pull/11) ([@angeliski](https://github.com/angeliski))
+
+#### Authors: 1
+
+- Rogerio Angeliski ([@angeliski](https://github.com/angeliski))
+
+---
+
 # v1.1.0 (Wed Mar 03 2021)
 
 #### 🏎 Performance
