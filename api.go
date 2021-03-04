@@ -6,6 +6,6 @@ func Run() error{
 	fmt.Sprintf("Hello from go_auto_release!")
 	fmt.Sprintf("Patch added - Fix")
 	fmt.Sprintf("Minor added - Fix")
-	fmt.Sprintf("Major added :nervoso:")
+	fmt.Sprintf("Major added :nervoso: -fix")
 	return nil
 }
