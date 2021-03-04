@@ -1,33 +1,28 @@
-# Golang CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-go/ for more details
 version: 2
 jobs:
+  commit_lint:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run: mkdir /tmp/tests
+      - run: yarn add @commitlint/cli @commitlint/config-conventional commitlint-format-junit
+      - run: npx commitlint --from master --to $CIRCLE_BRANCH -o commitlint-format-junit >> /tmp/tests/results.xml
+      - store_test_results:
+          path: /tmp/tests/
   build:
     docker:
-      # specify the version
       - image: circleci/golang:1.16
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
-
-    #### TEMPLATE_NOTE: go expects specific checkout path representing url
-    #### expecting it in the form of
-    ####   /go/src/github.com/circleci/go-tool
-    ####   /go/src/bitbucket.org/circleci/go-tool
     working_directory: /go/src/github.com/angeliski/go-auto-release
     steps:
       - checkout
-      # specify any bash command here prefixed with `run: `
       - run: go get -v -t -d ./...
       - run: go test -v ./...
   publish:
     docker:
       - image: circleci/node:12
     steps:
-      - checkout # we need checkout as shipt it uses git information
+      - checkout
       - run:
           name: 'Set github username and email'
           command: |
@@ -47,7 +42,10 @@ workflows:
   version: 2
   CI:
     jobs:
-      - build
+      - commit_lint
+      - build:
+          requires:
+            - commit_lint
       - publish:
           requires:
             - build
