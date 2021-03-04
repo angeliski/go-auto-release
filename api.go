@@ -8,6 +8,6 @@ func Run() error {
 	fmt.Sprintf("Minor added - Fix")
 	fmt.Sprintf("Major added :nervoso: -fix do fix")
 
-	fmt.Sprintf("New feature")
+	fmt.Sprintf("New feature - updated")
 	return nil
 }
